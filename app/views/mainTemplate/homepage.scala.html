@@ -1,0 +1,28 @@
+@(user: models.users.User)
+@mainTemplate.main("Home Page", user) {
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="well" id="margTop">
+                  <p>@user.getEmail</p>
+              </div>
+
+          </div>
+          <div class="col-md-4">
+              <div class="well" id="margTop">
+                  <p>@user.getFname @user.getLname</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="well" id="margTop">
+                  <p>@user.getRole</p>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+
+
+
+}
